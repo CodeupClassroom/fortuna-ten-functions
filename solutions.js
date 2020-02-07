@@ -20,3 +20,35 @@
  * and
  * concat
  */
+ function isTrue(input) {
+    return (input === true);
+}
+
+function isFalse(input) {
+    return (input === false);
+}
+
+function not(input) {
+    return (input === !0);
+
+}
+
+function addOne(input) {
+     return (++input);
+}
+
+function isEven(input) {
+    return (input % 2 === 0);
+}
+
+function isIdentical(input, input2) {
+     return input === input2;
+}
+
+function isEqual (input, input2) {
+     return input == input2;
+}
+
+function or(input, input2) {
+     return input || input2;
+}
