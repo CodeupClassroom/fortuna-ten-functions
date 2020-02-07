@@ -63,6 +63,16 @@ function isFalse(input) {
 // not(Infinity)               // false
 // not(123)                    // false
 //
+function not(input) {
+    if (isTrue(input) === true);
+        return false;
+    }else {
+        return true;
+    }
+
+}
+
+
 // 4. Define a function named `addOne` that takes in a single input. If the input is a number or a numeric string, return the value plus one.
 //
 // addOne(0)                    // 1
@@ -76,6 +86,11 @@ function isFalse(input) {
 // addOne(true)                 // NaN
 // addOne(NaN)                  // NaN
 //
+
+function addOne(input) {
+    return input + 1;
+}
+
 //
 // 5. Define a function named `isEven` that takes in a single input. If the input is an even number or a string containing an even number, return `true`. Any other input should return false for the output.
 //
@@ -88,6 +103,16 @@ function isFalse(input) {
 // isEven(false)               // false
 // isEven("banana")            // false
 //
+
+function isEven(numInput) {
+    if (numInput % 2 === 0) {  // ? true --> even
+        var isOdd = "Even";
+    } else {
+        isOdd = "Odd";
+    }
+    return isOdd;
+}
+
 // 6. Define a function named `isIdentical` that takes in two input arguments. If each input is equal both in data type and in value, then return `true`. If the values are not the same data type or not the same value, return `false`.
 //
 // isIdentical(3, 3)                     // true
