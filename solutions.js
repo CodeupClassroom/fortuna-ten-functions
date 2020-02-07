@@ -103,21 +103,9 @@ function addOne(num) {
 // isEven(false)               // false
 // isEven("banana")            // false
 
-function isEven(num){
+function isEven(num) {
 
-    //Check if number
-    var isNumber = !isNaN(num);
-    var result;
-
-    //Check if it is a number
-    if (isNumber === true) {
-        //true if even
-        result = isNumber % 2 === 0;
-    } else {
-        //false if odd or other
-        result = false;
-    }
-    return result;
+    return !isNaN(num) && num % 2 === 0;
 }
 
 // 6. Define a function named `isIdentical` that takes in two input arguments. If each input is equal both in data type and in value, then return `true`. If the values are not the same data type or not the same value, return `false`.
