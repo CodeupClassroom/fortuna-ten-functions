@@ -133,3 +133,17 @@ function isIdentical(input){
     return input === true;
 }
 
+// 7. Define a function named `isEqual` that takes in two input arguments. If each argument is equal only in value, then return true. Otherwise return false.
+//
+// isEqual(3, "3")                       // true
+// isEqual("abc123", "abc123")           // true
+// isEqual(true, 1)                      // true
+// isEqual(0, false)                     // true
+// isEqual(4, -5)                        // false
+// isEqual("java", "javascript")         // false
+
+function isEqual(inputOne, inputTwo){
+    //equal in value, true
+    return inputOne == inputTwo;
+}
+
