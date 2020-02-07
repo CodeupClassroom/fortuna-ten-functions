@@ -64,12 +64,12 @@ function isFalse(input) {
 // not(123)                    // false
 //
 function not(input) {
-    if (isTrue(input) === true);
-        return false;
-    }else {
-        return true;
+    if (isTrue(input) === true) {
+        var help = false;
+    } else {
+        help = true;
     }
-
+return help;
 }
 
 
@@ -106,11 +106,11 @@ function addOne(input) {
 
 function isEven(numInput) {
     if (numInput % 2 === 0) {  // ? true --> even
-        var isOdd = "Even";
+        var even = true;
     } else {
-        isOdd = "Odd";
+        even = false;
     }
-    return isOdd;
+    return even;
 }
 
 // 6. Define a function named `isIdentical` that takes in two input arguments. If each input is equal both in data type and in value, then return `true`. If the values are not the same data type or not the same value, return `false`.
@@ -123,6 +123,15 @@ function isEven(numInput) {
 // isIdentical(2, "2")                   // false
 // isIdentical("javascript", "java")     // false
 //
+function isIdentical(x, y) {
+    if (x === y) {
+        var test =true;
+    } else {
+        test = false;
+    }
+    return test;
+}
+
 // 7. Define a function named `isEqual` that takes in two input arguments. If each argument is equal only in value, then return true. Otherwise return false.
 //
 // isEqual(3, "3")                       // true
@@ -132,6 +141,15 @@ function isEven(numInput) {
 // isEqual(4, -5)                        // false
 // isEqual("java", "javascript")         // false
 //
+function isEqual(x,y) {
+    if (x == y) {
+        var test = true;
+    }else {
+        test = false;
+    }
+    return test;
+}
+
 // 8. Define a function named `or` that takes in two input arguments. The output returned should be the result of an `or` operation on both inputs.
 //
 // or(true, true)                    // true
@@ -141,6 +159,11 @@ function isEven(numInput) {
 // or("hello", "world")              // "hello" (this behavior is non-obvious, research more!)
 //
 //
+function or(x,y) {
+    return x || y;
+}
+
+
 //
 // 9. Define a function named `and` that takes in two input arguments and returns the result of a logical `and` operation of both inputs.
 //
@@ -151,6 +174,11 @@ function isEven(numInput) {
 // and("hello", "world")              // "world" (this behavior is non-obvious, research more)
 //
 //
+
+function and(x,y) {
+    return x && y;
+}
+
 // 10. Define a function named `concat` that takes in two input arguments. If both arguments are strings, then return the concatenated result. If two numbers are provided, then return the string concatenation of each set of numerals.
 //
 // concat("code", "up")                // "codeup"
@@ -159,6 +187,11 @@ function isEven(numInput) {
 // concat(4, 2)                        // "42"
 // concat(true, true)                  // "truetrue"
 //
+
+function concat(x,y) {
+    return x.toString() + y.toString();
+}
+
 // ## Files in this project
 // - `index.html` is the welcome page
 // - `results.html` shows the ouptut from automated test data
