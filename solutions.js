@@ -118,7 +118,7 @@ function isEven(input) {
 // 6.
 
 function isIdentical(n1, n2) {
-
+    return (n1 === n2);
 }
 
 
@@ -132,6 +132,13 @@ function isIdentical(n1, n2) {
 // isIdentical(2, "2")                   // false
 // isIdentical("javascript", "java")     // false
 //
+
+// 7.
+
+function isEqual(n1, n2) {
+    return (n1 == n2);
+}
+
 // 7. Define a function named `isEqual` that takes in two input arguments. If each argument is equal only in value, then return true. Otherwise return false.
 //
 // isEqual(3, "3")                       // true
@@ -141,15 +148,28 @@ function isIdentical(n1, n2) {
 // isEqual(4, -5)                        // false
 // isEqual("java", "javascript")         // false
 //
+
+// 8.
+
+function or(n1, n2) {
+    return n1 || n2
+}
+
 // 8. Define a function named `or` that takes in two input arguments. The output returned should be the result of an `or` operation on both inputs.
 //
-// or(true, true)                    // true
-// or(true, false)                   // true
-// or(false, true)                   // true
-// or(false, false)                  // false
-// or("hello", "world")              // "hello" (this behavior is non-obvious, research more!)
+// console.log(or(true, true)  )                  // true
+// console.log(or(true, false)  )                 // true
+// console.log(or(false, true)   )                // true
+// console.log(or(false, false)   )               // false
+// console.log(or("hello", "world"))              // "hello" (this behavior is non-obvious, research more!)
 //
 //
+
+// 9.
+function and (n1, n2) {
+    return n1 && n2;
+}
+
 //
 // 9. Define a function named `and` that takes in two input arguments and returns the result of a logical `and` operation of both inputs.
 //
@@ -160,6 +180,13 @@ function isIdentical(n1, n2) {
 // and("hello", "world")              // "world" (this behavior is non-obvious, research more)
 //
 //
+
+// 10.
+
+function concat(n1, n2) {
+    return (n1.toString() + n2.toString());
+}
+
 // 10. Define a function named `concat` that takes in two input arguments. If both arguments are strings, then return the concatenated result. If two numbers are provided, then return the string concatenation of each set of numerals.
 //
 // concat("code", "up")                // "codeup"
