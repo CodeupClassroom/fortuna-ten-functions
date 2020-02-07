@@ -35,6 +35,7 @@
 function isTrue(input) {
     return input === true;
 }
+
 //
 // 2. Define a function named `isFalse` that takes in a value and returns a true if and only if the provided input is equal to false in both type and value.
 //
@@ -68,6 +69,7 @@ function not(input) {
     input = Boolean(input);
     return !isTrue(input);
 }
+
 // function not(input) {
 //     if (isTrue(input) === true) {
 //         var help = false;
@@ -111,9 +113,12 @@ function addOne(input) {
 // isEven("banana")            // false
 //
 
+
 function isEven(numInput) {
-    if (numInput % 2 === 0) {  // ? true --> even
-        var even = true;
+    if (numInput === false) {
+        var even = false;
+    } else if (numInput % 2 === 0) {  // ? true --> even
+        even = true;
     } else {
         even = false;
     }
@@ -132,7 +137,7 @@ function isEven(numInput) {
 //
 function isIdentical(x, y) {
     if (x === y) {
-        var test =true;
+        var test = true;
     } else {
         test = false;
     }
@@ -148,10 +153,10 @@ function isIdentical(x, y) {
 // isEqual(4, -5)                        // false
 // isEqual("java", "javascript")         // false
 //
-function isEqual(x,y) {
+function isEqual(x, y) {
     if (x == y) {
         var test = true;
-    }else {
+    } else {
         test = false;
     }
     return test;
@@ -166,7 +171,7 @@ function isEqual(x,y) {
 // or("hello", "world")              // "hello" (this behavior is non-obvious, research more!)
 //
 //
-function or(x,y) {
+function or(x, y) {
     return x || y;
 }
 
@@ -182,7 +187,7 @@ function or(x,y) {
 //
 //
 
-function and(x,y) {
+function and(x, y) {
     return x && y;
 }
 
@@ -195,7 +200,7 @@ function and(x,y) {
 // concat(true, true)                  // "truetrue"
 //
 
-function concat(x,y) {
+function concat(x, y) {
     return x.toString() + y.toString();
 }
 
