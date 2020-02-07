@@ -80,7 +80,7 @@ function not (input) {
 // addOne(NaN)                  // NaN
 
 function addOne (input) {
-    return input + 1;
+    return parseFloat(input + 1)
 }
 
 // Define a function named isEven that takes in a single input. If the input is an even number or a string containing an even number, return true. Any other input should return false for the output.
@@ -128,4 +128,41 @@ function isIdentical (x, y) {
 
 function isEqual (a, b) {
     return a == b;
+}
+
+// Define a function named or that takes in two input arguments. The output returned should be the result of an or operation on both inputs.
+//
+// or(true, true)                    // true
+// or(true, false)                   // true
+// or(false, true)                   // true
+// or(false, false)                  // false
+// or("hello", "world")              // "hello" (this behavior is non-obvious, research more!)
+
+function or (a, b) {
+    return a || b;
+}
+
+// Define a function named and that takes in two input arguments and returns the result of a logical and operation of both inputs.
+//
+// and(true, true)                    // true
+// and(true, false)                   // false
+// and(false, true)                   // false
+// and(false, false)                  // false
+// and("hello", "world")              // "world" (this behavior is non-obvious, research more)
+
+function and (a, b) {
+    return a && b;
+}
+
+// Define a function named concat that takes in two input arguments. If both arguments are strings, then return the concatenated result. If two numbers are provided, then return the string concatenation of each set of numerals.
+//
+// concat("code", "up")                // "codeup"
+// concat("connect", 4)                // "connect4"
+// concat("hello", "world")            // "helloworld"
+// concat(4, 2)                        // "42"
+// concat(true, true)                  // "truetrue"
+
+function concat (x, y) {
+    var value = "" + x + y;
+    return value;
 }
