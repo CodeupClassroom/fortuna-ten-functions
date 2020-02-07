@@ -129,8 +129,8 @@ function isEven(num){
 // isIdentical(2, "2")                   // false
 // isIdentical("javascript", "java")     // false
 
-function isIdentical(input){
-    return input === true;
+function isIdentical(inputOne,inputTwo){
+    return inputOne === inputTwo;
 }
 
 // 7. Define a function named `isEqual` that takes in two input arguments. If each argument is equal only in value, then return true. Otherwise return false.
