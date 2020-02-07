@@ -1,3 +1,5 @@
+STUDENT NAME: Anthony San Miguel
+
 ➢ Ten Functions 
 =================
 
