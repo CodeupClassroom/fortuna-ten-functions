@@ -50,11 +50,8 @@ function isTrue(input){
 // isFalse("Banana")          // false
 // isFalse([1, 2])            // false
 
-
-//TODO come back to this one!!!
-
 function isFalse(input) {
-    if(input !== true) {
+    if(input === false) {
         return true;
     } else {
         return false;
@@ -79,6 +76,30 @@ function not(input){
     return !input;
 }
 
+// Define a function named addOne that takes in a single input. If the input is a number or a numeric string, return the value plus one.
+//
+// addOne(0)                    // 1
+// addOne(2)                    // 3
+// addOne(-5)                   // -4
+// addOne(5.789)                // 6.789
+// addOne(Infinity)             // Infinity
+// addOne("2")                  // 3
+// addOne("0")                  // 1
+// addOne("banana")             // NaN
+// addOne(true)                 // NaN
+// addOne(NaN)                  // NaN
+
+function addOne(input){
+    return Number(input) +1;
+}
+
+// function addOne(input) {
+//     if(parseInt('input') === number) {
+//         return parseInt('input')+1;
+//     }
+// }
+
+
 // Define a function named isEven that takes in a single input. If the input is an even number or a string containing an even number, return true. Any other input should return false for the output.
 //
 // isEven(2)                   // true
@@ -92,7 +113,7 @@ function not(input){
 
 
 function isEven(input) {
-    if(input%2 === 0){
+    if(input%2 === 0 && typeof input !== "boolean"){
         return true;
     } else {
         return false;
@@ -134,3 +155,50 @@ function isEqual(input1, input2) {
     }
 }
 
+// Define a function named or that takes in two input arguments. The output returned should be the result of an or operation on both inputs.
+//
+// or(true, true)                    // true
+// or(true, false)                   // true
+// or(false, true)                   // true
+// or(false, false)                  // false
+// or("hello", "world")              // "hello" (this behavior is non-obvious, research more!)
+
+function or(input1, input2) {
+    if(input1 || input2) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+// Define a function named and that takes in two input arguments and returns the result of a logical and operation of both inputs.
+//
+// and(true, true)                    // true
+// and(true, false)                   // false
+// and(false, true)                   // false
+// and(false, false)                  // false
+// and("hello", "world")              // "world" (this behavior is non-obvious, research more)
+
+function and(input1, input2) {
+    if(input1 && input2) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+// Define a function named concat that takes in two input arguments. If both arguments are strings, then return the concatenated result. If two numbers are provided, then return the string concatenation of each set of numerals.
+//
+// concat("code", "up")                // "codeup"
+// concat("connect", 4)                // "connect4"
+// concat("hello", "world")            // "helloworld"
+// concat(4, 2)                        // "42"
+// concat(true, true)                  // "truetrue"
+
+function concat(input1, input2) {
+    if(typeof input1 === 'string' && typeof input2 === 'string') {
+        return input1 + input2;
+    } else if(typeof input1 !== 'string' && typeof input2 !== 'string') {
+        return input1.toString() + input2.toString();
+    }
+}
