@@ -63,14 +63,20 @@ function isFalse(input) {
 // not(Infinity)               // false
 // not(123)                    // false
 //
+
 function not(input) {
-    if (isTrue(input) === true) {
-        var help = false;
-    } else {
-        help = true;
-    }
-return help;
+    input = Boolean(input);
+    return !isTrue(input);
 }
+// function not(input) {
+//     if (isTrue(input) === true) {
+//         var help = false;
+//     } else {
+//         help = true;
+//     }
+//     // console.log(help);
+//     return help;
+// }
 
 
 // 4. Define a function named `addOne` that takes in a single input. If the input is a number or a numeric string, return the value plus one.
@@ -88,6 +94,7 @@ return help;
 //
 
 function addOne(input) {
+    var input = Number(input);
     return input + 1;
 }
 
