@@ -83,11 +83,38 @@ function not(input){
 // addOne(true)                 // NaN
 // addOne(NaN)                  // NaN
 
+
 function addOne(num) {
     //input to number
-    var convertedNumber = Number(num);
+    var toNumber = Number(num);
 
     //value plus one
-    return convertedNumber + 1;
+    return toNumber + 1;
 }
 
+// 5. Define a function named `isEven` that takes in a single input. If the input is an even number or a string containing an even number, return `true`. Any other input should return false for the output.
+//
+// isEven(2)                   // true
+// isEven(-8)                  // true
+// isEven(0)                   // true
+// isEven("42")                // true
+// isEven(1)                   // false
+// isEven("-3")                // false
+// isEven(false)               // false
+// isEven("banana")            // false
+
+function isEven(num){
+    //Check if number
+    var isNumber = !isNaN(num);
+    var result;
+
+    //Check if it is a number
+    if (isNumber === true) {
+        //true if even
+        result = isNumber % 2 !== 0;
+    } else {
+        //false if odd or other
+        result = false;
+    }
+    return result;
+}
