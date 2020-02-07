@@ -118,3 +118,18 @@ function isEven(num){
     }
     return result;
 }
+
+// 6. Define a function named `isIdentical` that takes in two input arguments. If each input is equal both in data type and in value, then return `true`. If the values are not the same data type or not the same value, return `false`.
+//
+// isIdentical(3, 3)                     // true
+// isIdentical(false, false)             // true
+// isIdentical("hello", "hello")         // true
+// isIdentical(3, 3.0)                   // true
+// isIdentical(undefined, undefined)     // true
+// isIdentical(2, "2")                   // false
+// isIdentical("javascript", "java")     // false
+
+function isIdentical(input){
+    return input === true;
+}
+
