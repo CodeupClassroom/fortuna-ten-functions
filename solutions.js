@@ -55,17 +55,15 @@ function addOne(input) {
     return Number(input + 1);
 }
 
-
-
-
-    //     var addOneOutput;
-//  if (NaN(input)) {
-//      addOneOutput = NaN;
-//  } else {
-//  addOneOutput = (input + 1);
-//  }
-//  return addOneOutput;
-// }
+function isEven(input) {
+    var evenOutput;
+    if (input % 2 === 0) {
+        evenOutput = true;
+    } else {
+        evenOutput = false;
+    }
+    return evenOutput;
+}
 
 
 
