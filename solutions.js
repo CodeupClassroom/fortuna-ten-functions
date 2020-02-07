@@ -20,7 +20,7 @@
  * and
  * concat
  */
-function isTrue (input) {
+function isTrue(input) {
     var inputType;
     if (typeof input === "boolean") {
         inputType = true;
@@ -33,13 +33,39 @@ function isTrue (input) {
     return inputType;
 }
 
+function isFalse(input) {
+    var inputType;
+    if (typeof input != "boolean") {
+        inputType = false;
+    } else if (input === true) {
+        inputType = true
+    }
+    else {
+        inputType = false;
+    }
+    return inputType;
+}
+
+function not(input) {
+var notInput = !input;
+return notInput;
+}
+
+function addOne(input) {
+    return Number(input + 1);
+}
 
 
 
 
-
-
-
+    //     var addOneOutput;
+//  if (NaN(input)) {
+//      addOneOutput = NaN;
+//  } else {
+//  addOneOutput = (input + 1);
+//  }
+//  return addOneOutput;
+// }
 
 
 
