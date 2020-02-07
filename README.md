@@ -177,3 +177,4 @@ function isBoolean(input) {
 -------------------
 
 \ ゜o゜)ノ
+comment test
