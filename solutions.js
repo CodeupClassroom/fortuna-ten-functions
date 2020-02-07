@@ -188,23 +188,30 @@ function and(x , y) {
 // concat(4, 2)                        // "42"
 // concat(true, true)                  // "truetrue"
 
-
 function concat(x , y) {
-    var returnString;
-    if ((typeof x === "string") && (typeof y === "string")) {
-        returnString = (x + y);
+    var fixedX;
+    switch (typeof x){
+        case "string":
+            fixedX = x;
+            break;
+        case "number":
+            fixedX = (x.toString());
+            break;
+        case "boolean":
+            fixedX = (x.toString());
+            break;
     }
-    else if ((typeof x === "number") && (typeof y === "number")) {
-        returnString = (x.toString() + y.toString());
+    var fixedY;
+    switch (typeof y){
+        case "string":
+            fixedY = y;
+            break;
+        case "number":
+            fixedY = (y.toString());
+            break;
+        case "boolean":
+            fixedY = (y.toString());
+            break;
     }
-    else if ((typeof x === "number") || (typeof y === "number")) {
-        returnString = (x.toString() + y.toString());
-    }
-    else if ((typeof x === "boolean") && (typeof y === "boolean")) {
-        returnString = (x.toString() + y.toString());
-    }
-    else if ((typeof x === "boolean") || (typeof y === "boolean")) {
-        returnString = (x.toString() + y.toString());
-    }
-    return returnString;
+    return (fixedX + fixedY);
 }
