@@ -33,7 +33,7 @@
 // isTrue([1, 2])           // false
 
 function isTrue(input){
-    if(input) {
+    if(input === true) {
         return true;
     } else {
         return false;
@@ -50,11 +50,14 @@ function isTrue(input){
 // isFalse("Banana")          // false
 // isFalse([1, 2])            // false
 
+
+//TODO come back to this one!!!
+
 function isFalse(input) {
-    if(input) {
-        return false;
-    } else {
+    if(input !== true) {
         return true;
+    } else {
+        return false;
     }
 }
 
@@ -95,3 +98,4 @@ function isEven(input) {
         return false;
     }
 }
+
