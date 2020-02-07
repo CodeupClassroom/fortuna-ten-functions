@@ -78,8 +78,8 @@ function not(input) {
 function addOne(x) {
     if(!isNaN(x)){
         return x + 1
-    }else if (!NaN("" + x)){
-        return Number(x) + 1
+    }else {
+        return (Number(x)) + 1
     }
 }
 
@@ -94,7 +94,7 @@ function addOne(x) {
 // isEven(false)               // false
 // isEven("banana")            // false
 function isEven(input) {
-    if (input % 2 === 0 || (Number(input) % 2 === 0) {
+    if (input % 2 === 0 || (Number(input) % 2 === 0)){
         return true
     }
 }
