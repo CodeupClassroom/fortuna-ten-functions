@@ -159,3 +159,16 @@ function or(inputOne, inputTwo){
     //return is result of or operation on both inputs
     return inputOne || inputTwo;
 }
+
+// 9. Define a function named `and` that takes in two input arguments and returns the result of a logical `and` operation of both inputs.
+//
+// and(true, true)                    // true
+// and(true, false)                   // false
+// and(false, true)                   // false
+// and(false, false)                  // false
+// and("hello", "world")              // "world" (this behavior is non-obvious, research more)
+
+function and(inputOne, inputTwo){
+    //use and operation
+    return inputOne && inputTwo;
+}
