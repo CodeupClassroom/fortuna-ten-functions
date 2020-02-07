@@ -51,3 +51,22 @@ function isFalse(value){
     //equal to false in type and value
     return value === false;
 }
+
+// 3. Define a function named `not` that takes in any input and returns the boolean opposite of the provided input.
+//
+// not(false)                  // true
+// not(0)                      // true
+// not("")                     // true
+// not(null)                   // true
+// not(NaN)                    // true
+// not(undefined)              // true
+// not(true)                   // false
+// not("something")            // false
+// not(Infinity)               // false
+// not(123)                    // false
+
+function not(input){
+    //opposite boolean from input
+    return !input;
+}
+
