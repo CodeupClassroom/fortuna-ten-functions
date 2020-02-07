@@ -115,7 +115,7 @@ function addOne(input) {
 
 
 function isEven(numInput) {
-    if (numInput === false) {
+    if (typeof numInput === "boolean") {
         var even = false;
     } else if (numInput % 2 === 0) {  // ? true --> even
         even = true;
