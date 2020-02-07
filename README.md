@@ -1,4 +1,4 @@
-➢ Ten Functions 
+➢ Ten Functions James Spicer
 =================
 
 "Ten Functions" is a prepared environment for practicing introductory function writing with automated tests for feedback.
