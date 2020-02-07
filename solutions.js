@@ -85,8 +85,19 @@ function isEqual(x, y) {
     return equalOutput;
 }
 
+function or(x,y) {
+    var orOutput;
+    return (x || y);
+}
 
+function and(x,y) {
+    var andOutput;
+    return (x && y);
+}
 
+function concat(x,y) {
+    return String(x+y);
+}
 
 // The comments to the right of the function call example demonstrate the output of the function's operation on the provided input(s). Add your function definitions to solutions.js. Refresh results.html to run automated tests for feedback on your solutions.
 //
