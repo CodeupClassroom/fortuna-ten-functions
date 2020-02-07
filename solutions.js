@@ -20,3 +20,78 @@
  * and
  * concat
  */
+
+
+// Define a function named isTrue that takes in any input and returns true if the input provided is exactly equal to true in value and data type.
+//
+// isTrue(true)             // true
+// isTrue(false)            // false
+// isTrue(0)                // false
+// isTrue(null)             // false
+// isTrue("true")           // false
+// isTrue("Banana")         // false
+// isTrue([1, 2])           // false
+
+function isTrue(input){
+    if(input) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+// Define a function named isFalse that takes in a value and returns a true if and only if the provided input is equal to false in both type and value.
+//
+// isFalse(false)             // true
+// isFalse(true)              // false
+// isFalse(0)                 // false
+// isFalse(null)              // false
+// isFalse("")                // false
+// isFalse("Banana")          // false
+// isFalse([1, 2])            // false
+
+function isFalse(input) {
+    if(input) {
+        return false;
+    } else {
+        return true;
+    }
+}
+
+
+// Define a function named not that takes in any input and returns the boolean opposite of the provided input.
+//
+// not(false)                  // true
+// not(0)                      // true
+// not("")                     // true
+// not(null)                   // true
+// not(NaN)                    // true
+// not(undefined)              // true
+// not(true)                   // false
+// not("something")            // false
+// not(Infinity)               // false
+// not(123)                    // false
+
+function not(input){
+    return !input;
+}
+
+// Define a function named isEven that takes in a single input. If the input is an even number or a string containing an even number, return true. Any other input should return false for the output.
+//
+// isEven(2)                   // true
+// isEven(-8)                  // true
+// isEven(0)                   // true
+// isEven("42")                // true
+// isEven(1)                   // false
+// isEven("-3")                // false
+// isEven(false)               // false
+// isEven("banana")            // false
+
+
+function isEven(input) {
+    if(input%2 === 0){
+        return true;
+    } else {
+        return false;
+    }
+}
