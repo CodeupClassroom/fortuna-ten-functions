@@ -46,6 +46,10 @@ function isTrue(input) {
 // isFalse("Banana")          // false
 // isFalse([1, 2])            // false
 //
+function isFalse(input) {
+    return input === false;
+}
+
 // 3. Define a function named `not` that takes in any input and returns the boolean opposite of the provided input.
 //
 // not(false)                  // true
