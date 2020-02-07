@@ -38,12 +38,20 @@ function addOne(input){
 }
 
 function isEven(input){
+    // var isNum = !isNaN(input);
+    // if (isNum) {
+    //     if typeof
+    // }
+
+
     var isNum = !isNaN(input);
     if (isNum){
-        return input % 2 == 0;
+        return input % 2 === 0;
     } else{
         return false;
     }
+
+    // return input % 2 === 0;
 }
 
 function isIdentical(input1, input2){
