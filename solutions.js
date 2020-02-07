@@ -29,7 +29,7 @@ function isFalse(input) {
 }
 
 function not(input) {
-    return (input === !0);
+    return (!input);
 
 }
 
@@ -38,7 +38,7 @@ function addOne(input) {
 }
 
 function isEven(input) {
-    return (input % 2 === 0);
+    return input % 2 === 0;
 }
 
 function isIdentical(input, input2) {
@@ -51,4 +51,12 @@ function isEqual (input, input2) {
 
 function or(input, input2) {
      return input || input2;
+}
+
+function and(input, input2) {
+     return input && input2;
+}
+
+function concat(input, input2) {
+     return "" + input + input2;
 }
