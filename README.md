@@ -2,7 +2,7 @@
 =================
 
 "Ten Functions" is a prepared environment for practicing introductory function writing with automated tests for feedback.
-
+//comment
 
 ## Setup Instructions
 - If you want more practice working with Git and Github, fork this project on GitHub and then clone your fork to your development box, so you have both your own local copy and a remote in GitHub where you can push your solutions.
