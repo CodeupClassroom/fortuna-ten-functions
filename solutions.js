@@ -36,3 +36,18 @@ function isTrue(input){
     // equal to true in value and type
     return input === true;
 }
+
+// 2. Define a function named `isFalse` that takes in a value and returns a true if and only if the provided input is equal to false in both type and value.
+//
+// isFalse(false)             // true
+// isFalse(true)              // false
+// isFalse(0)                 // false
+// isFalse(null)              // false
+// isFalse("")                // false
+// isFalse("Banana")          // false
+// isFalse([1, 2])            // false
+
+function isFalse(value){
+    //equal to false in type and value
+    return value === false;
+}
