@@ -65,7 +65,25 @@ function isEven(input) {
     return evenOutput;
 }
 
+function isIdentical(x, y) {
+    var identicalOutput;
+    if (x === y) {
+        identicalOutput = true;
+    } else {
+        identicalOutput = false;
+    }
+    return identicalOutput;
+}
 
+function isEqual(x, y) {
+    var equalOutput;
+    if (x == y) {
+        equalOutput = true;
+    } else {
+        equalOutput = false;
+    }
+    return equalOutput;
+}
 
 
 
