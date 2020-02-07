@@ -104,6 +104,7 @@ function addOne(num) {
 // isEven("banana")            // false
 
 function isEven(num){
+
     //Check if number
     var isNumber = !isNaN(num);
     var result;
@@ -111,7 +112,7 @@ function isEven(num){
     //Check if it is a number
     if (isNumber === true) {
         //true if even
-        result = isNumber % 2 !== 0;
+        result = isNumber % 2 === 0;
     } else {
         //false if odd or other
         result = false;
@@ -182,6 +183,6 @@ function and(inputOne, inputTwo){
 // concat(true, true)                  // "truetrue"
 
 function concat(inputOne, inputTwo){
-    //use concat for input
-    return inputOne + inputTwo;
+    //use concat for input of string
+    return ""+ inputOne + inputTwo;
 }
