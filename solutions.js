@@ -172,3 +172,16 @@ function and(inputOne, inputTwo){
     //use and operation
     return inputOne && inputTwo;
 }
+
+// 10. Define a function named `concat` that takes in two input arguments. If both arguments are strings, then return the concatenated result. If two numbers are provided, then return the string concatenation of each set of numerals.
+//
+// concat("code", "up")                // "codeup"
+// concat("connect", 4)                // "connect4"
+// concat("hello", "world")            // "helloworld"
+// concat(4, 2)                        // "42"
+// concat(true, true)                  // "truetrue"
+
+function concat(inputOne, inputTwo){
+    //use concat for input
+    return inputOne + inputTwo;
+}
